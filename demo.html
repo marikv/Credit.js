@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Credit.js | By Ron Masas</title>
+	<style type="text/css"> 
+	@font-face {
+	  font-family: 'Source Sans Pro';
+	  font-style: normal;
+	  font-weight: 300;
+	  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+	}
+	html {
+		padding: 0px;
+		margin: 0px;
+	}
+	body {
+		color: #333;
+		padding:0px;
+		margin: 0px;
+		text-align: center;
+		background: #fff;
+		font-family: 'Source Sans Pro', Arial, serif;
+	}
+	#cards {
+		margin-top: 50px;
+	}
+	.box {
+		width: 100%;
+		max-width: 400px;
+		margin: 40px auto;
+		background: #ffffff;
+	}
+	.box p {
+		text-align: center;
+		font-size: 16px;
+		display: block;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="credit.css" />
+</head>
+<body>
+	<img id="cards" src="http://s14.postimg.org/7yge2hwrl/credit_cards.png" />
+	<div class="box">
+		<p>
+		Plase enter your credit card information here.
+		</p>
+		<input type="text" name="credit_card_number" class="credit" />
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="credit.js"></script>
+	<script type="text/javascript">
+		jQuery(function ( $ ){
+			$(".credit").credit();
+		});
+	</script>
+</body>
+</html>
