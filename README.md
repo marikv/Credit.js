@@ -21,4 +21,4 @@ Plase enter your credit card information here.
 ```
 
 
-![alt tag](http://s14.postimg.org/7yge2hwrl/credit_cards.png)
+![alt tag](http://s22.postimg.org/8ivlrnopd/credit_js.png)
