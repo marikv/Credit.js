@@ -19,3 +19,6 @@ Plase enter your credit card information here.
 	});
 </script>
 ```
+
+
+![alt tag](http://s14.postimg.org/7yge2hwrl/credit_cards.png)
