@@ -45,13 +45,16 @@
         	// Print the full credit input
         	credit_org.after( credit_control );
 
+        	// Global var for credit cells
+        	var cells = credit_control.children(".credit-cell");
+
         	/**
 			 * Set key press event for all credit inputs
 			 * this function will allow only to numbers to be inserted.
 			 * @access public
 			 * @return {bool} check if user input is only numbers
 			 */
-			credit_control.children(".credit-cell").keypress(function ( event ) {
+			cells.keypress(function ( event ) {
 				// Check if key code is a number
 				if ( event.keyCode > 31 && (event.keyCode < 48 || event.keyCode > 57) ) {
 			        // Key code is a number, the `keydown` event will fire next
@@ -66,7 +69,7 @@
 			 * @access public
 			 * @return {void}
 			 */
-			credit_control.children(".credit-cell").keydown(function ( event ) {
+			cells.keydown(function ( event ) {
 				// Check if key is backspace
 				var backspace = ( event.keyCode == 8 );
 				// Switch credit text length
@@ -101,16 +104,28 @@
 				}
 			});
 
+			// On cells focus
+			cells.focus( function() {
+			  	// Add focus class
+			  	credit_control.addClass('c-focus');
+			});
+
+			// On focus out
+			cells.blur( function() {
+			  	// Remove focus class
+			  	credit_control.removeClass('c-focus');
+			});
+
 			/**
 			 * Update orginal input value to the credit card number
 			 * @access public
 			 * @return {void}
 			 */
-			credit_control.children(".credit-cell").keyup(function (){
+			cells.keyup(function (){
 				// Init card number var
 				var card_number = '';
 				// For each of the credit card cells
-				credit_control.children(".credit-cell").each(function (){
+				cells.each(function (){
 					// Add current cell value
 					card_number = card_number + $(this).val();
 				});
