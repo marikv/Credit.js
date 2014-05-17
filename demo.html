@@ -30,20 +30,39 @@
 		background: #ffffff;
 	}
 	.box p {
-		text-align: center;
+		text-align: left;
 		font-size: 16px;
 		display: block;
 	}
+	.box p.gray {
+		font-size: 13px;
+		color:  gray;
+		padding-top: 50px;
+	}
+	.margin-bottom{
+		padding-bottom: 10px;
+	}
+	a {
+	color: #387fd6;
+	}
+
 	</style>
 	<link rel="stylesheet" type="text/css" href="credit.css" />
 </head>
 <body>
 	<img id="cards" src="http://s14.postimg.org/7yge2hwrl/credit_cards.png" />
 	<div class="box">
+		<h1>Credit.js</h1>
 		<p>
-		Plase enter your credit card information here.
+		Typing your credit card online can be really hard, because in a normal text input the numbers are displayed one after the other with no spaces, checking that you type the right numbers can be exhausting.
+		</p>
+		<p class="margin-bottom">
+		Credit.js lets you create the perfect credit card input.
 		</p>
 		<input type="text" name="credit_card_number" class="credit" />
+		<p class="gray">
+		Created by <a href="https://github.com/masasron/">Ron Masas</a>
+		</p>
 	</div>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="credit.js"></script>
