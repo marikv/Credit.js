@@ -1,7 +1,9 @@
 Credit.js
 =========
 
-A simple jQuery plugin for creating awesome credit card inputs.
+Typing your credit card online can be really hard, because in a normal text input the numbers are displayed one after the other with no spaces, checking that you type the right numbers can be exhausting.
+
+Credit.js lets you create the perfect credit card input.
 
 How to use?
 
