@@ -5,7 +5,7 @@ Typing your credit card online can be really hard, because in a normal text inpu
 
 Credit.js lets you create the perfect credit card input.
 
-How to use?
+Usage:
 
 ```
 <!-- Include credit css file -->
