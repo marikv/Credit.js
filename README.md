@@ -24,7 +24,7 @@ Usage:
 </script>
 ```
 
-Credit automatically focus on the credit card input, if you don't want this to happen simply set the `auto_select` to false.
+The `credit` function automatically focus on the credit card input, if you don't want this to happen simply set the `auto_select` to false.
 
 ```
 $(".credit").credit({ auto_select: false });
