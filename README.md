@@ -33,4 +33,4 @@ $(".credit").credit({ auto_select: false });
 
 ![alt tag](http://s22.postimg.org/8ivlrnopd/credit_js.png)
 
-(The cardit cards image was taken from [creditcardjs.com/credit-card-type-detection](http://creditcardjs.com/credit-card-type-detection) )
+(The credit cards image was taken from [creditcardjs.com/credit-card-type-detection](http://creditcardjs.com/credit-card-type-detection) )
