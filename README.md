@@ -7,7 +7,7 @@ Credit.js lets you create the perfect credit card input.
 
 Usage:
 
-```
+```html
 <!-- Include credit css file -->
 <link rel="stylesheet" type="text/css" href="credit.css" />
 <!-- Credit card input -->
@@ -26,7 +26,7 @@ Usage:
 
 The `credit` function automatically focus on the credit card input, if you don't want this to happen simply set the `auto_select` to false.
 
-```
+```js
 $(".credit").credit({ auto_select: false });
 ```
 
